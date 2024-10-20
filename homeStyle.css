@@ -1,0 +1,94 @@
+.vbg {
+  width: 800px !important; /* Force width */
+  height: 300px !important; /* Force height */
+  display: block; /* Ensure canvas is block level */
+  margin-left: 10px; /* Center if needed */
+}
+
+.dg {
+  width: 300px !important; /* Force width */
+  height: 300px !important; /* Force height */
+  display: block; /* Ensure canvas is block level */
+  margin: auto; /* Center if needed */
+}
+
+.lc {
+  width: 300px !important; /* Force width */
+  height: 250px !important; /* Force height */
+  display: block; /* Ensure canvas is block level */
+  margin: auto; /* Center if needed */
+}
+pre {
+  white-space: pre-wrap; /* Allows wrapping */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: for any container you want to hide the scrollbar */
+.container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media only screen and (max-width: 480px) {
+  .vbg {
+    width: 320px !important; /* Force width */
+    height: 320px !important; /* Force height */
+    display: block; /* Ensure canvas is block level */
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .lc {
+    width: 320px !important; /* Force width */
+    height: 130px !important; /* Force height */
+    display: block; /* Ensure canvas is block level */
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .dg {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for medium devices like tablets */
+  .vbg {
+    width: 320px !important; /* Force width */
+    height: 320px !important; /* Force height */
+    /* Ensure canvas is block level */
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .lc {
+    width: 320px !important; /* Force width */
+    height: 130px !important; /* Force height */
+    /* Ensure canvas is block level */
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .dg {
+    margin-left: 0px;
+    width: 300px !important; /* Force width */
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  /* Styles for medium devices like tablets */
+  .vbg {
+    height: 250px !important; 
+  }
+
+
+  .dg {
+    margin-left: 0px;
+    width: 300px !important; /* Force width */
+    height: 300px !important;
+  }
+}

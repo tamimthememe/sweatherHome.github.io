@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homeStyle.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sweather</title>
+  </head>
+  <body class="bg-gray-900 text-green-50 hide-scrollbar">
+    <div class="max-lg:flex justify-between pr-10 pl-0 w-full mt-2 hidden items-center max-xl:flex ">
+      <h1 class="text-4xl px-6 py-2 mt-2 max-sm:hidden">
+        Sweather<span class="text-green-500">!</span>
+      </h1>
+      <div class="flex gap-4">
+        <a
+        href="./index.html"
+          class="hover:bg-gray-900 bg-gray-800 text-lg px-4 py-2 max-sm:ml-4 rounded-xl cursor-pointer"
+        >
+          Dashboard
+        </a>
+        <a
+        href="./table.html"
+          class="hover:bg-gray-900 text-lg px-4 py-2 rounded-xl cursor-pointer bg-gray-800"
+        >
+          Tables
+        </a>
+      </div>
+    </div>
+    <div class="flex h-[100vh] max-sm:h-full items-center">
+      <div class="bg-gray-800 h-[95vh] max-sm:h-full mx-5 my-auto rounded-lg xl:block hidden">
+        <h1 class="text-4xl px-10 py-5 mt-2">
+          Sweather<span class="text-green-500">!</span>
+        </h1>
+        <div class="mt-10 mx-5 flex flex-col gap-2">
+          <p
+            class="hover:bg-gray-900 text-lg px-4 py-2 rounded-xl cursor-pointer"
+          >
+            Dashboard
+          </p>
+          <a
+            class="hover:bg-gray-900 text-lg px-4 py-2 rounded-xl cursor-pointer"
+            href="./table.html"
+          >
+            Tables
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-full h-[95vh] max-xl:h-full overflow-x-hidden max-xl:mt-0 max-md:mt-8"
+      >
+        <div
+          class="flex flex-wrap self-start items-center justify-between mr-5 ml-3"
+        >
+          <form id="form">
+            <div class="flex gap-4">
+              <input
+                type="text"
+                name="city"
+                placeholder="Search for a city..."
+                class="bg-gray-800 px-4 py-4 w-[50rem] max-lg:w-[40rem] max-md:w-[30rem] max-sm:w-[12rem] rounded-2xl"
+              />
+              <button
+                class="bg-green-500 px-4 py-2 rounded-xl hover:bg-gray-500 text-gray-900"
+              >
+                Sweather it
+              </button>
+            </div>
+          </form>
+          <div>
+            <div
+              class="bg-gray-800 rounded-full flex w-[4rem] h-[4rem] items-center justify-center flex-wrap max-md:hidden"
+            >
+              <p class="text-4xl">T</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              id="weather-container"
+              class="gap-4 items-center mr-9 ml-3 max-md:ml-0"
+            ></div>
+            <div class="bg-gray-800 h-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
